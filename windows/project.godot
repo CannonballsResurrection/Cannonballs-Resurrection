@@ -1,0 +1,31 @@
+; Cannonballs! — Windows port (Godot 4.7, gl_compatibility).
+; See PORTING.md for the engine decision and porting conventions.
+
+config_version=5
+
+[application]
+
+config/name="Cannonballs!"
+run/main_scene="res://src/boot.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.png"
+; No Godot boot splash — the 2002 game launched straight into its menu.
+; show_image=false suppresses the engine logo; the brief pre-window frame is
+; painted black to match.
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0, 0, 0, 1)
+
+[display]
+
+; The original game renders in 800x600 screen space (WT host page).
+window/size/viewport_width=800
+window/size/viewport_height=600
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+
+; gl_compatibility blends in sRGB/gamma space like the 2002 WT engine
+; (see PORTING.md; cf. the overlay-alpha entry in ../HANDOFF.md).
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

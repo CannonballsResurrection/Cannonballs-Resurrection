@@ -1,0 +1,31 @@
+{
+  "name": "HUT",
+  "upAxis": "Y",
+  "scale": 0.8813,
+  "parts": [
+    {
+      "mesh": "actor.obj",
+      "textures": [
+        "hut.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

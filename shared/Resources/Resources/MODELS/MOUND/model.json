@@ -1,0 +1,31 @@
+{
+  "name": "MOUND",
+  "upAxis": "Y",
+  "scale": 0.81188,
+  "parts": [
+    {
+      "mesh": "mound.obj",
+      "textures": [
+        "moundo.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

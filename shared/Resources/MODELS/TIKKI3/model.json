@@ -1,0 +1,33 @@
+{
+  "name": "TIKKI3",
+  "upAxis": "Y",
+  "scale": 1.00386,
+  "parts": [
+    {
+      "mesh": "tikki3.obj",
+      "textures": [
+        "tikki1o.jpg",
+        "tikki2o.jpg",
+        "tikki3o.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

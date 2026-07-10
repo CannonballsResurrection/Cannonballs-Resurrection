@@ -1,0 +1,31 @@
+{
+  "name": "MOUNDBEAM",
+  "upAxis": "Y",
+  "scale": 1.86166,
+  "parts": [
+    {
+      "mesh": "beam.obj",
+      "textures": [
+        "moundo.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "name": "TAILS",
+  "upAxis": "Y",
+  "scale": 1.0,
+  "parts": [
+    {
+      "mesh": "tail1.obj",
+      "textures": [
+        "cattailso.png"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": "tail2.obj",
+      "textures": [
+        "cattailso.png"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": "tail3.obj",
+      "textures": [
+        "cattailso.png"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

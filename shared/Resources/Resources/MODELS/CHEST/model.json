@@ -1,0 +1,31 @@
+{
+  "name": "CHEST",
+  "upAxis": "Y",
+  "scale": 1.0,
+  "parts": [
+    {
+      "mesh": "actor.obj",
+      "textures": [
+        "chesto.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

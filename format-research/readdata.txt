@@ -1,0 +1,226 @@
+66d07125 (rva 07125):  mov        eax, 0x66d0da10
+66d0712a (rva 0712a):  call       0x66d0c96c
+66d0712f (rva 0712f):  sub        esp, 0x144
+66d07135 (rva 07135):  push       ebx
+66d07136 (rva 07136):  push       esi
+66d07137 (rva 07137):  push       edi
+66d07138 (rva 07138):  mov        edi, ecx
+66d0713a (rva 0713a):  call       0x66d05cc7  ; -> ?ClearAll@geGeometryRes@@IAEXXZ
+66d0713f (rva 0713f):  push       dword ptr [ebp + 0xc]
+66d07142 (rva 07142):  mov        ebx, dword ptr [ebp + 8]
+66d07145 (rva 07145):  mov        ecx, edi
+66d07147 (rva 07147):  push       ebx
+66d07148 (rva 07148):  call       dword ptr [0x66d0e40c]  ; -> WDENGINE.dll!?ReadData@geResource@@UAEHPAUgeVFile@@PAVgeResourceIndex@@@Z
+66d0714e (rva 0714e):  test       eax, eax
+66d07150 (rva 07150):  je         0x66d07196
+66d07152 (rva 07152):  mov        esi, dword ptr [0x66d0e2a8]
+66d07158 (rva 07158):  push       4
+66d0715a (rva 0715a):  lea        edx, [ebp - 0x20]
+66d0715d (rva 0715d):  mov        ecx, ebx
+66d0715f (rva 0715f):  call       esi
+66d07161 (rva 07161):  cmp        dword ptr [ebp - 0x20], 0x67656f6d
+66d07168 (rva 07168):  jne        0x66d07196
+66d0716a (rva 0716a):  push       4
+66d0716c (rva 0716c):  lea        edx, [ebp - 0x18]
+66d0716f (rva 0716f):  mov        ecx, ebx
+66d07171 (rva 07171):  call       esi
+66d07173 (rva 07173):  push       4
+66d07175 (rva 07175):  pop        edx
+66d07176 (rva 07176):  cmp        dword ptr [ebp - 0x18], edx
+66d07179 (rva 07179):  ja         0x66d07196
+66d0717b (rva 0717b):  cmp        dword ptr [ebp - 0x18], 3
+66d0717f (rva 0717f):  jae        0x66d071a9
+66d07181 (rva 07181):  push       1
+66d07183 (rva 07183):  push       0
+66d07185 (rva 07185):  push       0
+66d07187 (rva 07187):  mov        ecx, ebx
+66d07189 (rva 07189):  call       dword ptr [0x66d0e408]  ; -> WDENGINE.dll!@geVFile_OpenNewSystem@20
+66d0718f (rva 0718f):  test       eax, eax
+66d07191 (rva 07191):  mov        dword ptr [ebp + 0xc], eax
+66d07194 (rva 07194):  jne        0x66d071ac
+66d07196 (rva 07196):  xor        eax, eax
+66d07198 (rva 07198):  mov        ecx, dword ptr [ebp - 0xc]
+66d0719b (rva 0719b):  pop        edi
+66d0719c (rva 0719c):  pop        esi
+66d0719d (rva 0719d):  pop        ebx
+66d0719e (rva 0719e):  mov        dword ptr fs:[0], ecx
+66d071a5 (rva 071a5):  leave      
+66d071a6 (rva 071a6):  ret        8
+66d071a9 (rva 071a9):  mov        dword ptr [ebp + 0xc], ebx
+66d071ac (rva 071ac):  mov        ecx, dword ptr [ebp + 0xc]
+66d071af (rva 071af):  lea        ebx, [edi + 0x88]
+66d071b5 (rva 071b5):  push       4
+66d071b7 (rva 071b7):  mov        edx, ebx
+66d071b9 (rva 071b9):  call       esi
+66d071bb (rva 071bb):  mov        ecx, dword ptr [ebp + 0xc]
+66d071be (rva 071be):  and        dword ptr [ebp - 0x1c], 0
+66d071c2 (rva 071c2):  push       4
+66d071c4 (rva 071c4):  lea        edx, [ebp - 0x1c]
+66d071c7 (rva 071c7):  call       esi
+66d071c9 (rva 071c9):  mov        ecx, dword ptr [ebp + 0xc]
+66d071cc (rva 071cc):  lea        edx, [edi + 0x98]
+66d071d2 (rva 071d2):  push       4
+66d071d4 (rva 071d4):  call       esi
+66d071d6 (rva 071d6):  cmp        dword ptr [ebp - 0x18], 1
+66d071da (rva 071da):  push       0x10
+66d071dc (rva 071dc):  jbe        0x66d071e8
+66d071de (rva 071de):  mov        ecx, dword ptr [ebp + 0xc]
+66d071e1 (rva 071e1):  lea        edx, [edi + 0x78]
+66d071e4 (rva 071e4):  call       esi
+66d071e6 (rva 071e6):  jmp        0x66d071f6
+66d071e8 (rva 071e8):  lea        eax, [edi + 0x78]
+66d071eb (rva 071eb):  push       0
+66d071ed (rva 071ed):  push       eax
+66d071ee (rva 071ee):  call       0x66d0cb36
+66d071f3 (rva 071f3):  add        esp, 0xc
+66d071f6 (rva 071f6):  push       4
+66d071f8 (rva 071f8):  pop        eax
+66d071f9 (rva 071f9):  cmp        dword ptr [ebp - 0x18], eax
+66d071fc (rva 071fc):  jb         0x66d07209
+66d071fe (rva 071fe):  mov        ecx, dword ptr [ebp + 0xc]
+66d07201 (rva 07201):  push       eax
+66d07202 (rva 07202):  lea        edx, [edi + 0x60]
+66d07205 (rva 07205):  call       esi
+66d07207 (rva 07207):  jmp        0x66d0720c
+66d07209 (rva 07209):  mov        dword ptr [edi + 0x60], eax
+66d0720c (rva 0720c):  push       dword ptr [ebp - 0x1c]
+66d0720f (rva 0720f):  mov        ecx, dword ptr [edi + 0x94]
+66d07215 (rva 07215):  call       0x66d07c97
+66d0721a (rva 0721a):  mov        ecx, dword ptr [ebx]
+66d0721c (rva 0721c):  imul       ecx, ecx, 0x168
+66d07222 (rva 07222):  call       dword ptr [0x66d0e254]  ; -> WDENGINE.dll!@geRam_AllocateClear@4
+66d07228 (rva 07228):  mov        ecx, dword ptr [edi + 0x98]
+66d0722e (rva 0722e):  mov        dword ptr [edi + 0x8c], eax
+66d07234 (rva 07234):  imul       ecx, ecx, 0x134
+66d0723a (rva 0723a):  call       dword ptr [0x66d0e254]  ; -> WDENGINE.dll!@geRam_AllocateClear@4
+66d07240 (rva 07240):  mov        ecx, dword ptr [ebx]
+66d07242 (rva 07242):  mov        dword ptr [edi + 0x9c], eax
+66d07248 (rva 07248):  shl        ecx, 6
+66d0724b (rva 0724b):  call       dword ptr [0x66d0e2b0]  ; -> WDENGINE.dll!@geRam_Allocate@4
+66d07251 (rva 07251):  mov        ecx, dword ptr [ebx]
+66d07253 (rva 07253):  mov        edx, eax
+66d07255 (rva 07255):  shl        ecx, 6
+66d07258 (rva 07258):  push       ecx
+66d07259 (rva 07259):  mov        ecx, dword ptr [ebp + 0xc]
+66d0725c (rva 0725c):  mov        dword ptr [edi + 0x48], eax
+66d0725f (rva 0725f):  call       esi
+66d07261 (rva 07261):  xor        ebx, ebx
+66d07263 (rva 07263):  cmp        dword ptr [ebp - 0x1c], ebx
+66d07266 (rva 07266):  jle        0x66d072c7
+66d07268 (rva 07268):  mov        ecx, dword ptr [ebp + 0xc]
+66d0726b (rva 0726b):  lea        edx, [ebp - 0x150]
+66d07271 (rva 07271):  call       dword ptr [0x66d0e2a4]  ; -> WDENGINE.dll!@geVFileUtil_ReadString@8
+66d07277 (rva 07277):  lea        eax, [ebp - 0x150]
+66d0727d (rva 0727d):  lea        ecx, [ebp - 0x34]
+66d07280 (rva 07280):  push       eax
+66d07281 (rva 07281):  call       0x66d0cf67
+66d07286 (rva 07286):  xor        eax, eax
+66d07288 (rva 07288):  lea        ecx, [ebp - 0x50]
+66d0728b (rva 0728b):  push       eax
+66d0728c (rva 0728c):  mov        dword ptr [ebp - 4], eax
+66d0728f (rva 0728f):  push       eax
+66d07290 (rva 07290):  lea        eax, [ebp - 0x34]
+66d07293 (rva 07293):  push       eax
+66d07294 (rva 07294):  call       0x66d07fdc  ; -> ??0geGeometry_Material@@QAE@ABVstring@wtl@@QAVMaterialRes@@_N@Z
+66d07299 (rva 07299):  mov        ecx, dword ptr [edi + 0x94]
+66d0729f (rva 0729f):  push       eax
+66d072a0 (rva 072a0):  mov        byte ptr [ebp - 4], 1
+66d072a4 (rva 072a4):  call       0x66d07d55
+66d072a9 (rva 072a9):  and        byte ptr [ebp - 4], 0
+66d072ad (rva 072ad):  lea        ecx, [ebp - 0x50]
+66d072b0 (rva 072b0):  call       0x66d080ca  ; -> ??1geGeometry_Material@@QAE@XZ
+66d072b5 (rva 072b5):  or         dword ptr [ebp - 4], 0xffffffff
+66d072b9 (rva 072b9):  lea        ecx, [ebp - 0x34]
+66d072bc (rva 072bc):  call       0x66d02ad5
+66d072c1 (rva 072c1):  inc        ebx
+66d072c2 (rva 072c2):  cmp        ebx, dword ptr [ebp - 0x1c]
+66d072c5 (rva 072c5):  jl         0x66d07268
+66d072c7 (rva 072c7):  xor        eax, eax
+66d072c9 (rva 072c9):  cmp        dword ptr [edi + 0x88], eax
+66d072cf (rva 072cf):  mov        dword ptr [ebp - 0x10], eax
+66d072d2 (rva 072d2):  jle        0x66d07334
+66d072d4 (rva 072d4):  mov        dword ptr [ebp - 0x14], eax
+66d072d7 (rva 072d7):  mov        ebx, dword ptr [edi + 0x8c]
+66d072dd (rva 072dd):  mov        ecx, dword ptr [ebp + 0xc]
+66d072e0 (rva 072e0):  add        ebx, dword ptr [ebp - 0x14]
+66d072e3 (rva 072e3):  mov        edx, ebx
+66d072e5 (rva 072e5):  call       dword ptr [0x66d0e2a4]  ; -> WDENGINE.dll!@geVFileUtil_ReadString@8
+66d072eb (rva 072eb):  mov        ecx, dword ptr [ebp + 0xc]
+66d072ee (rva 072ee):  push       0x20
+66d072f0 (rva 072f0):  lea        edx, [ebx + 0x144]
+66d072f6 (rva 072f6):  call       esi
+66d072f8 (rva 072f8):  mov        ecx, dword ptr [ebp + 0xc]
+66d072fb (rva 072fb):  push       4
+66d072fd (rva 072fd):  lea        edx, [ebx + 0x164]
+66d07303 (rva 07303):  call       esi
+66d07305 (rva 07305):  mov        ecx, dword ptr [ebp + 0xc]
+66d07308 (rva 07308):  push       4
+66d0730a (rva 0730a):  lea        edx, [ebx + 0x140]
+66d07310 (rva 07310):  call       esi
+66d07312 (rva 07312):  mov        ecx, dword ptr [ebp + 0xc]
+66d07315 (rva 07315):  push       0x40
+66d07317 (rva 07317):  lea        edx, [ebx + 0x100]
+66d0731d (rva 0731d):  call       esi
+66d0731f (rva 0731f):  inc        dword ptr [ebp - 0x10]
+66d07322 (rva 07322):  add        dword ptr [ebp - 0x14], 0x168
+66d07329 (rva 07329):  mov        eax, dword ptr [ebp - 0x10]
+66d0732c (rva 0732c):  cmp        eax, dword ptr [edi + 0x88]
+66d07332 (rva 07332):  jl         0x66d072d7
+66d07334 (rva 07334):  xor        eax, eax
+66d07336 (rva 07336):  cmp        dword ptr [edi + 0x98], eax
+66d0733c (rva 0733c):  mov        dword ptr [ebp - 0x10], eax
+66d0733f (rva 0733f):  jle        0x66d07389
+66d07341 (rva 07341):  mov        dword ptr [ebp - 0x14], eax
+66d07344 (rva 07344):  mov        ebx, dword ptr [edi + 0x9c]
+66d0734a (rva 0734a):  mov        ecx, dword ptr [ebp + 0xc]
+66d0734d (rva 0734d):  add        ebx, dword ptr [ebp - 0x14]
+66d07350 (rva 07350):  push       4
+66d07352 (rva 07352):  lea        edx, [ebx + 4]
+66d07355 (rva 07355):  mov        dword ptr [ebp - 0x24], edx
+66d07358 (rva 07358):  call       esi
+66d0735a (rva 0735a):  mov        eax, dword ptr [ebp - 0x24]
+66d0735d (rva 0735d):  mov        ecx, dword ptr [ebp + 0xc]
+66d07360 (rva 07360):  lea        edx, [ebx + 8]
+66d07363 (rva 07363):  mov        eax, dword ptr [eax]
+66d07365 (rva 07365):  shl        eax, 2
+66d07368 (rva 07368):  push       eax
+66d07369 (rva 07369):  call       esi
+66d0736b (rva 0736b):  mov        ecx, dword ptr [ebp + 0xc]
+66d0736e (rva 0736e):  push       4
+66d07370 (rva 07370):  mov        edx, ebx
+66d07372 (rva 07372):  call       esi
+66d07374 (rva 07374):  inc        dword ptr [ebp - 0x10]
+66d07377 (rva 07377):  add        dword ptr [ebp - 0x14], 0x134
+66d0737e (rva 0737e):  mov        eax, dword ptr [ebp - 0x10]
+66d07381 (rva 07381):  cmp        eax, dword ptr [edi + 0x98]
+66d07387 (rva 07387):  jl         0x66d07344
+66d07389 (rva 07389):  cmp        dword ptr [ebp - 0x18], 3
+66d0738d (rva 0738d):  jae        0x66d07398
+66d0738f (rva 0738f):  mov        ecx, dword ptr [ebp + 0xc]
+66d07392 (rva 07392):  call       dword ptr [0x66d0e404]  ; -> WDENGINE.dll!@geVFile_Close@4
+66d07398 (rva 07398):  lea        ebx, [edi + 0x98]
+66d0739e (rva 0739e):  xor        eax, eax
+66d073a0 (rva 073a0):  mov        dword ptr [ebp - 0x10], eax
+66d073a3 (rva 073a3):  cmp        dword ptr [ebx], eax
+66d073a5 (rva 073a5):  jle        0x66d073db
+66d073a7 (rva 073a7):  mov        dword ptr [ebp + 0xc], eax
+66d073aa (rva 073aa):  mov        esi, dword ptr [edi + 0x9c]
+66d073b0 (rva 073b0):  mov        ecx, dword ptr [ebp + 8]
+66d073b3 (rva 073b3):  add        esi, dword ptr [ebp + 0xc]
+66d073b6 (rva 073b6):  call       dword ptr [0x66d0e400]  ; -> WDENGINE.dll!@VIPM_CreateFromFile@4
+66d073bc (rva 073bc):  test       eax, eax
+66d073be (rva 073be):  mov        dword ptr [esi + 0x88], eax
+66d073c4 (rva 073c4):  je         0x66d07196
+66d073ca (rva 073ca):  inc        dword ptr [ebp - 0x10]
+66d073cd (rva 073cd):  add        dword ptr [ebp + 0xc], 0x134
+66d073d4 (rva 073d4):  mov        eax, dword ptr [ebp - 0x10]
+66d073d7 (rva 073d7):  cmp        eax, dword ptr [ebx]
+66d073d9 (rva 073d9):  jl         0x66d073aa
+66d073db (rva 073db):  push       1
+66d073dd (rva 073dd):  pop        eax
+66d073de (rva 073de):  jmp        0x66d07198
+66d073e3 (rva 073e3):  mov        eax, dword ptr [ecx + 0x98]
+66d073e9 (rva 073e9):  ret        
+66d073ea (rva 073ea):  push       esi
+66d073eb (rva 073eb):  mov        esi, dword ptr [esp + 8]
+66d073ef (rva 073ef):  imul       esi, esi, 0x134

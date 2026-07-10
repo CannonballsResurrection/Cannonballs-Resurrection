@@ -1,0 +1,33 @@
+{
+  "name": "LIGHTHOUSE",
+  "upAxis": "Y",
+  "scale": 5.69395,
+  "parts": [
+    {
+      "mesh": "actor.obj",
+      "textures": [
+        "lighthouseo.jpg",
+        "lighto.jpg",
+        "rail.png"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

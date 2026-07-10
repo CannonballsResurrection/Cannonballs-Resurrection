@@ -1,0 +1,79 @@
+{
+  "name": "CANNON",
+  "upAxis": "Y",
+  "scale": 1.0,
+  "parts": [
+    {
+      "mesh": "barrel.obj",
+      "textures": [
+        "cannonstand.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": "base.obj",
+      "textures": [
+        "cannonbase.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": "stone.obj",
+      "textures": [
+        "stone.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

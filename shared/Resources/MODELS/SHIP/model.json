@@ -1,0 +1,55 @@
+{
+  "name": "SHIP",
+  "upAxis": "Y",
+  "scale": 0.31669,
+  "parts": [
+    {
+      "mesh": "base.obj",
+      "textures": [
+        "boato.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": "mast.obj",
+      "textures": [
+        "boato.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

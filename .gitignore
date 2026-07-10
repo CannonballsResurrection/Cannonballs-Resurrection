@@ -1,0 +1,16 @@
+.build/
+.DS_Store
+snapshots/
+resurrection-archive/game-files/
+*.qcow2
+*.vhd
+*.iso
+__pycache__/
+.claude/settings.local.json
+# build artifacts / packaged installers (shipped via GitHub Releases, not git)
+dist/
+windows/build/
+windows/dist/
+
+# throwaway publish secrets — never commit
+tools/publish-public.env
