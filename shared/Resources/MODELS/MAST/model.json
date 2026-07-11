@@ -1,0 +1,31 @@
+{
+  "name": "MAST",
+  "upAxis": "Y",
+  "scale": 0.88235,
+  "parts": [
+    {
+      "mesh": "mast.obj",
+      "textures": [
+        "boato.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

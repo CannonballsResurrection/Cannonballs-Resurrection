@@ -1,0 +1,31 @@
+{
+  "name": "BRUSH2",
+  "upAxis": "Y",
+  "scale": 1.0,
+  "parts": [
+    {
+      "mesh": "actor.obj",
+      "textures": [
+        "ferno.png"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

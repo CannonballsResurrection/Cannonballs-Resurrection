@@ -1,0 +1,42 @@
+{
+  "_comment": "Single source of truth for the Cannonballs! Resurrection trailer. build_trailer.py records each clip with the game's --record mode, concatenates them after a black intro, burns the text cards, and lays the music over the whole thing. Quick-cut island durations are computed to fill the exact music length (probed with ffprobe), so the trailer always ends on the winner-orbit finale at the final note.",
+
+  "fps": 30,
+  "_aspect": "native 4:3 (game is 800x600); do not use 16:9 — it stretches the game",
+  "resolution": "1440x1080",
+  "draft_resolution": "960x720",
+  "music": "$HOME/Downloads/Cannonballs Resurrection.wav",
+  "font": "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
+  "out": "trailer/Cannonballs-Resurrection-Trailer.mp4",
+
+  "black_intro": 11.5,
+  "warmup": 3.0,
+
+  "opening": { "map": "Tropicali", "seconds": 19.5, "variety": 0 },
+  "showcase": { "map": "Tropicali", "seconds": 33.0 },
+
+  "quick_islands": [
+    "Moonlight Cove", "Voodoo Isles", "Old Gods", "Pyramids",
+    "Nightbridge", "Crossbones", "Ziggurat", "Skull Isle", "Overboard", "Volcano!"
+  ],
+
+  "finale": { "map": "Tropicali", "seconds": 7.0 },
+
+  "cards": [
+    {
+      "id": "card1",
+      "text": "The game ‘Cannonballs!’ from the early 2000’s was beloved by many. It has sadly been abandoned, and many have struggled to run it since.",
+      "start": 0.0, "end": 7.0, "height_scale": 0.052, "wrap": 34, "fullscreen": true, "slot": "intro"
+    },
+    {
+      "id": "card2",
+      "text": "Until today.",
+      "start": 7.0, "end": 11.5, "height_scale": 0.11, "wrap": 0, "fullscreen": true, "slot": "intro"
+    },
+    {
+      "id": "card3",
+      "text": "And all islands are included.",
+      "start": 64.0, "end": 69.0, "height_scale": 0.075, "wrap": 0, "fullscreen": true, "slot": "after_showcase"
+    }
+  ]
+}

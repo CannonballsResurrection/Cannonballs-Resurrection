@@ -1,0 +1,32 @@
+{
+  "name": "ARROW",
+  "upAxis": "Y",
+  "scale": 1.0,
+  "parts": [
+    {
+      "mesh": "actor.obj",
+      "textures": [
+        "arrowo.png",
+        "reflection.jpg"
+      ],
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<TITLE>CANNONBALLS! TUTORIAL</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		arrows_01_over = newImage("arrows_01-over.gif");
+		arrows_02_over = newImage("arrows_02-over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</HEAD>
+<BODY BGCOLOR=#FFFFFF ONLOAD="preloadImages();"  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" SCROLL="no">
+<!-- ImageReady Slices  -->
+<IMG SRC="3.jpg" WIDTH="800" HEIGHT=600"><br>
+<TABLE WIDTH=57 BORDER=0 CELLPADDING=0 CELLSPACING=0 ALIGN="CENTER">
+	<TR>
+		<TD>
+			<A HREF="tutorial2.htm"
+				ONMOUSEOVER="changeImages('arrows_01', 'arrows_01-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('arrows_01', 'arrows_01.gif'); return true;">
+				<IMG NAME="arrows_01" SRC="arrows_01.gif" WIDTH=28 HEIGHT=40 BORDER=0></A></TD>
+		<TD>
+			<A HREF="tutorial4.htm"
+				ONMOUSEOVER="changeImages('arrows_02', 'arrows_02-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('arrows_02', 'arrows_02.gif'); return true;">
+				<IMG NAME="arrows_02" SRC="arrows_02.gif" WIDTH=29 HEIGHT=40 BORDER=0></A></TD>
+	</TR>
+</TABLE>
+<TABLE WIDTH=57 BORDER=0 CELLPADDING=0 CELLSPACING=0 ALIGN="CENTER">
+	<TR><TD><CENTER><font face="Arial" size = "2">3/5</font></CENTER></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>
